@@ -1,0 +1,98 @@
+body{
+    background: linear-gradient( 135deg , #153677, #4e085f);
+
+}
+*{
+    font-family: sans-serif;
+}
+.container{
+    padding: 10px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+}
+.container h2{
+    display: flex;
+    align-items: center;
+}
+.container h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.container .form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EDEEF0;
+    border-radius: 60px;
+    margin-bottom: 30px;
+}
+.container .form input{
+    flex: 1;
+    padding: 15px 20px;
+    background-color: #EDEEF0;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.container .form button{
+    padding: 15px 40px;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background-color: #FF5845;
+    color: white;
+    cursor: pointer;
+}
+.container ul li{
+    list-style-type: none;
+    position: relative;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.container ul li::before{
+    content: "";
+    background-image: url(./images/unchecked.png);
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+.container ul li.checked::before{
+    content: "";
+    background-image: url(./images/checked.png);
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ul li span{
+    font-size: 22px;
+    color: rgb(187,187,187);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li span:hover{
+    background-color: #cccccc4b;
+    cursor: pointer;
+}
